@@ -7,13 +7,18 @@ package Hogar;
 
 /**
  *
- * @author paqui
+ * @author selopez 
  */
 public class Vivienda {
 
-    public void setPropietario(String propietario) {
-        this.propietario = propietario;
-    }
+   /**Clase principal vivienda con los parametros:
+   @param precio de tipo double
+   @param numHabitaciones de tipo int
+   @param superficie de tipo double
+   @param parking de tipo boolena
+   @param estado de tipo String
+   @param propietario de tipo String
+   */
     
     private double precio;
     private int numHabitaciones;
@@ -21,7 +26,13 @@ public class Vivienda {
     private boolean parking;
     private String estado;
     private String propietario;
-
+  /**Constructor principal de vivienda Crea vivienda con los siguientes parametros:
+   @param precio
+   @param numHabitaciones
+   @param superficie
+   @param parking
+   @param estado
+   @param propietario*/
     public Vivienda(double precio, int numHabitaciones, double superficie, boolean parking, String estado, String propietario) {
         this.precio = precio;
         this.numHabitaciones = numHabitaciones;
@@ -31,12 +42,16 @@ public class Vivienda {
         this.propietario = propietario;
     }
     
+    /** Constructor vivienda con parametro de entrada: precio
+     * @param precio*/
+    
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
     
-    
+      /**Metodo de clase que actualiza precio por un parametro de entrada: descuento
+        @param descuento*/
     
     public void actualizarPrecio(int descuento)
     {
@@ -117,6 +132,13 @@ public class Vivienda {
      */
     public String getPropietario() {
         return propietario;
+    }
+    
+     /**
+     * @param propietario the propietario to set
+     */
+    public void setPropietario(String propietario) {
+        this.propietario = propietario;
     }
 
     
